@@ -626,7 +626,35 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/user/login?username=Habakuk&password=1234",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "Habakuk",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -658,31 +686,31 @@
 	],
 	"variable": [
 		{
-			"id": "771536b9-7a10-48c5-b911-4f0890062b93",
+			"id": "f77426e4-71d3-414a-9f6a-798ee5b09115",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "10974755-de46-40c3-a2de-ca151abf97a8",
+			"id": "71d93215-54a4-4886-80a2-2b4e3e090ded",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "9bfd6370-b736-461c-a382-ef99185c6c1f",
+			"id": "95d9123a-da4a-43d9-baa5-a511bf96b78e",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c7e6ca5-31b0-48f1-942c-668342cae61d",
+			"id": "3d78481c-bd8a-4482-948d-9762de556960",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "203ff10b-747b-45df-a9bf-0dfe3598bca7",
+			"id": "f804ebbd-8b35-47dd-9cff-0900104b186a",
 			"key": "pet_status",
 			"value": ""
 		}
