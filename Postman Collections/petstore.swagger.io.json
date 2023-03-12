@@ -478,6 +478,46 @@
 						"url": "{{url}}/user/createWithArray"
 					},
 					"response": []
+				},
+				{
+					"name": "Create list of users Copy",
+					"id": "ab89362f-5ad3-4e73-a700-769857211b76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"username\": \"test\",\r\n    \"firstName\": \"T\",\r\n    \"lastName\": \"E\",\r\n    \"email\": \"test@123.eu\",\r\n    \"password\": \"12344321\",\r\n    \"phone\": \"1234567890\",\r\n    \"userStatus\": 0\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/user/createWithArray"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "43091fd1-9fa8-4fdc-8b79-d1337176adcd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "9e3a1ed1-555a-4bb7-a2eb-51a7f5d0920f"
@@ -507,31 +547,31 @@
 	],
 	"variable": [
 		{
-			"id": "62eadd88-a248-4c94-b0d5-cf69b200ab04",
+			"id": "75e3a059-07b0-4e0e-a96b-faa54f1160f1",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5457823f-d6bb-4605-adaa-6c788fe58a5d",
+			"id": "a10dd48c-6c86-47ee-935a-4c7eb4e41a06",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "53b956a2-1146-4979-8d0b-d23e4a14dee7",
+			"id": "4ed9c23b-be9a-40b5-8f3c-4184a466977f",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bfc29c95-cc3a-4345-9a8f-183dd30c7dfc",
+			"id": "b2c253bd-5323-4db4-93bd-d05f43355060",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a3316d3c-0377-412e-9718-23b34ae35112",
+			"id": "ec599ca0-17e8-495a-bb1f-d2432e771941",
 			"key": "pet_status",
 			"value": ""
 		}
