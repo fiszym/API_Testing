@@ -6,8 +6,13 @@
 	},
 	"item": [
 		{
+			"name": "PET related",
+			"item": [],
+			"id": "aeb6410e-1962-4f9e-82c8-dafa9ba3bdf3"
+		},
+		{
 			"name": "Find Pet by ID",
-			"_postman_id": "a5662644-ad66-4430-bc20-6a53424f55b9",
+			"id": "a5662644-ad66-4430-bc20-6a53424f55b9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -68,7 +73,7 @@
 					}
 				}
 			],
-			"_postman_id": "8a2205ec-3650-4022-ba55-c242d9ca7949",
+			"id": "8a2205ec-3650-4022-ba55-c242d9ca7949",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -112,7 +117,7 @@
 		},
 		{
 			"name": "Image post",
-			"_postman_id": "dfb2b42a-3d08-401a-b357-248ab9e6a391",
+			"id": "dfb2b42a-3d08-401a-b357-248ab9e6a391",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -138,10 +143,7 @@
 							"key": "file",
 							"src": "/X:/1405178501981.jpg"
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": "{{url}}/pet/{{pet_id}}/uploadImage"
 			},
@@ -149,7 +151,7 @@
 		},
 		{
 			"name": "Update PET",
-			"_postman_id": "f0b601ca-85bb-44d7-bc6e-aeb93dc8d310",
+			"id": "f0b601ca-85bb-44d7-bc6e-aeb93dc8d310",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -177,7 +179,7 @@
 		},
 		{
 			"name": "Find Pets by status",
-			"_postman_id": "5fb88441-0086-4517-8eab-9508aafdf0c4",
+			"id": "5fb88441-0086-4517-8eab-9508aafdf0c4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -211,7 +213,7 @@
 		},
 		{
 			"name": "Find Pets by tags",
-			"_postman_id": "314e67f5-cbd1-44f5-8115-834171978ff0",
+			"id": "314e67f5-cbd1-44f5-8115-834171978ff0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -246,7 +248,7 @@
 		},
 		{
 			"name": "Update PET with form data",
-			"_postman_id": "a27b89e9-db0c-4450-8f94-09e6e6c6a47b",
+			"id": "a27b89e9-db0c-4450-8f94-09e6e6c6a47b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -273,10 +275,7 @@
 							"type": "text",
 							"disabled": true
 						}
-					],
-					"options": {
-						"urlencoded": {}
-					}
+					]
 				},
 				"url": {
 					"raw": "{{url}}/pet/{{pet_id}}",
@@ -311,7 +310,7 @@
 		},
 		{
 			"name": "Delete PET",
-			"_postman_id": "e18913ba-68a2-43f4-af16-8c0948715283",
+			"id": "e18913ba-68a2-43f4-af16-8c0948715283",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -375,34 +374,33 @@
 	],
 	"variable": [
 		{
-			"id": "607aab77-2503-4cd5-9d25-e0bcce760703",
+			"id": "02608f60-199f-41bf-bd33-41989cdc0e46",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0f5df2d4-4699-4ddf-b618-db2de7914ffa",
+			"id": "5ff2b469-ff44-4384-b34c-0366cb02e24d",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "677bd85b-09f0-42d9-8e64-e3f10b601506",
+			"id": "d4b5d661-9f8b-4edb-9972-29c90d6ba70a",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9574bf62-1163-443f-a146-7c54939bbb18",
+			"id": "22335ac7-400b-464c-a9f5-38449f9eb051",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f02871be-a3e3-42e1-ad97-378d19a8d77d",
+			"id": "23baa551-7e19-4445-a7c6-ed1808de7a02",
 			"key": "pet_status",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
