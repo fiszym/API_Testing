@@ -478,34 +478,6 @@
 						"url": "{{url}}/user/createWithArray"
 					},
 					"response": []
-				},
-				{
-					"name": "Create list of users Copy",
-					"id": "bca1dcc3-0f7f-4cfc-9545-805c9c8d0777",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"username\": \"string\",\r\n    \"firstName\": \"string\",\r\n    \"lastName\": \"string\",\r\n    \"email\": \"string\",\r\n    \"password\": \"string\",\r\n    \"phone\": \"string\",\r\n    \"userStatus\": 0\r\n  }\r\n]",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}/user/createWithArray"
-					},
-					"response": []
 				}
 			],
 			"id": "9e3a1ed1-555a-4bb7-a2eb-51a7f5d0920f"
@@ -535,31 +507,31 @@
 	],
 	"variable": [
 		{
-			"id": "407107c5-e387-40e1-b967-39f15deff27f",
+			"id": "62eadd88-a248-4c94-b0d5-cf69b200ab04",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7998eae3-364c-4e8c-852f-9a97ca3bcb45",
+			"id": "5457823f-d6bb-4605-adaa-6c788fe58a5d",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "5040bd9b-e8d7-4bed-bcc8-b90b3c57cff3",
+			"id": "53b956a2-1146-4979-8d0b-d23e4a14dee7",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "66a4b54d-b8c1-415f-aefa-3d2b7b2cfdc2",
+			"id": "bfc29c95-cc3a-4345-9a8f-183dd30c7dfc",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d7b96b28-0a14-4125-b8c5-4830ea834fca",
+			"id": "a3316d3c-0377-412e-9718-23b34ae35112",
 			"key": "pet_status",
 			"value": ""
 		}
