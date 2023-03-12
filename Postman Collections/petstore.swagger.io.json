@@ -420,7 +420,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete Order",
 					"id": "588ca35a-f4d4-4c47-8a96-3451333b120a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -459,31 +459,31 @@
 	],
 	"variable": [
 		{
-			"id": "6d1168e3-a0ef-4c94-9780-8bae575714e4",
+			"id": "adf36f0b-cf44-4e0b-9fc9-1b0e3dd4d93e",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "05479bd6-da24-434c-87d6-15a843b97056",
+			"id": "b1191924-440c-4566-9a60-175fe41901ab",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "1627c99c-3e2d-4c48-87b1-58cd3f331998",
+			"id": "fb5526d4-3757-4711-bcf4-16a6a74da2c8",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "92f87a80-fdd1-4129-885b-f47cebdcb9d1",
+			"id": "045515d2-0941-4d70-a167-3dcc2cdd072c",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "43296dda-52db-499b-8c42-0803932a39e8",
+			"id": "ce606644-12f7-4d91-a6f5-baf01c8c00f5",
 			"key": "pet_status",
 			"value": ""
 		}
