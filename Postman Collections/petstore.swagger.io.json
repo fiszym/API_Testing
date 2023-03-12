@@ -594,7 +594,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 666,\r\n  \"username\": \"Habakuk\",\r\n  \"firstName\": \"NotDeamon\",\r\n  \"lastName\": \"Anymore\",\r\n}",
+							"raw": "{\r\n  \"id\": 666,\r\n  \"username\": \"Habakuk\",\r\n  \"firstName\": \"NotDeamon\",\r\n  \"lastName\": \"Anymore\",\r\n\r\n  \"userStatus\": 0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -633,31 +633,31 @@
 	],
 	"variable": [
 		{
-			"id": "92b63167-9aef-468f-abcb-2e18cfc5c5c3",
+			"id": "efe0cbe9-2f15-4efe-a65c-d1bd2b9052c3",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17e815e3-f0dc-4aca-941d-82245879f519",
+			"id": "61d395dd-75de-4eb7-bbcc-3daf3eb0ff6b",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "15d089fd-bdc1-4efb-83af-ea5ad40522a6",
+			"id": "248a0663-cbba-431e-872f-74bd08aee4dc",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "52ae385d-ffdd-4c24-88f5-5671a67ff695",
+			"id": "d4d65c60-ca29-420a-bc61-70387df3a46d",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dea64f7b-6a7b-45a3-a8d2-3346850d3f64",
+			"id": "e67ffe53-c189-4227-884e-318a6ca5d84e",
 			"key": "pet_status",
 			"value": ""
 		}
