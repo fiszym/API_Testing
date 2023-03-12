@@ -527,8 +527,24 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 666,\r\n  \"username\": \"Habakuk\",\r\n  \"firstName\": \"Demon\",\r\n  \"lastName\": \"FromHell\",\r\n  \"email\": \"test@123.eu\",\r\n  \"password\": \"12344321\",\r\n  \"phone\": \"1234567890\",\r\n  \"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/user"
 					},
 					"response": []
 				}
@@ -560,31 +576,31 @@
 	],
 	"variable": [
 		{
-			"id": "08f92a36-3457-48d2-82d1-cff2ec212687",
+			"id": "a120acdf-eb92-4692-94cc-1cf451118bb3",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b8de5fd-9c48-4a35-8ef5-b1eb22ca0e15",
+			"id": "d695fcb4-913e-4baf-8d6b-8cf627184ccd",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "3cc47d2c-c956-4839-a71f-dbd4bc2a229d",
+			"id": "db8bc3e9-e048-40d6-a7c0-11a05396e989",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "71ea7d08-8e0c-4d69-b817-f77067f62c03",
+			"id": "cfaebca9-ff78-47d2-ad59-03b07ea0b1c2",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b89141f-2e6a-452f-91c8-f5e790d46347",
+			"id": "fc7dfb9c-c5e3-4115-83f3-22eaaf74ce50",
 			"key": "pet_status",
 			"value": ""
 		}
