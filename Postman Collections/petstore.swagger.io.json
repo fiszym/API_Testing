@@ -606,7 +606,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Delete user",
 					"id": "5aa07e4b-44f0-4c1a-a64e-0831bd78eaa5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -645,31 +645,31 @@
 	],
 	"variable": [
 		{
-			"id": "f723b0d5-742a-46e3-ab0b-40e465b7a8cd",
+			"id": "817d68e1-aab0-422d-a313-42e9f3445a62",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "929592ce-bb6e-4920-9fff-2531411ca464",
+			"id": "3e42a6ab-9d1c-4382-b3f4-edfc63473154",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "5b4241c5-269c-4c42-83c3-7cb43dc7e918",
+			"id": "52c7512e-b920-4d6c-ab3a-f0ad1bac2e7e",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "92110100-4279-4102-a425-43a6b73931e0",
+			"id": "c7747185-d736-4885-86bb-3142fcc3e303",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4ceadfe3-50e3-482a-92a0-023edce19cf9",
+			"id": "b333ffaf-df7c-4bb7-8e30-cb277c0b38f9",
 			"key": "pet_status",
 			"value": ""
 		}
