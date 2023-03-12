@@ -367,7 +367,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json ();\r",
-									"pm.environment.set(\"orderId\", jsonData.orderId);\r",
+									"pm.environment.set(\"orderId\", jsonData.id);\r",
 									""
 								],
 								"type": "text/javascript"
@@ -440,31 +440,31 @@
 	],
 	"variable": [
 		{
-			"id": "30b9d58f-25da-48f0-b988-a5f4409b6264",
+			"id": "9384bb0a-4ac8-4df7-9463-cce646583da5",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c822600-4ec6-4972-b91f-ce29fe78ef26",
+			"id": "b63364c3-13b8-4a45-aa3f-b62e64e704e0",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "ae89a4fa-7e55-4292-abfa-868d0920a990",
+			"id": "ce6bd294-6785-473d-93f7-a886b6613d15",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "72a0ff0a-fa11-45cb-bbdb-892000340d1d",
+			"id": "58aec94d-9eb1-4e47-888a-8fa75c16f8f2",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "84e32a03-c6df-441f-815e-a094a6b04954",
+			"id": "606029ab-31da-420b-a782-0de557b29c07",
 			"key": "pet_status",
 			"value": ""
 		}
