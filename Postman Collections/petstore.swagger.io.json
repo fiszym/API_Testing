@@ -634,7 +634,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/user/login?username=Habakuk&password=1234",
+							"raw": "{{url}}/user/login?username=Habakuk&password=1234432112",
 							"host": [
 								"{{url}}"
 							],
@@ -645,13 +645,11 @@
 							"query": [
 								{
 									"key": "username",
-									"value": "Habakuk",
-									"type": "text"
+									"value": "Habakuk"
 								},
 								{
 									"key": "password",
-									"value": "1234",
-									"type": "text"
+									"value": "1234432112"
 								}
 							]
 						}
@@ -666,7 +664,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/user/logout"
 					},
 					"response": []
 				}
@@ -698,31 +697,31 @@
 	],
 	"variable": [
 		{
-			"id": "f658d4fc-b19a-4616-893d-dfa5f27224b1",
+			"id": "30f094fa-5bcd-4ec0-b5fc-e6576424cc68",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ed79796e-a883-41d6-a574-179fd03ab38b",
+			"id": "dc421690-1269-4eb6-bd4a-c886b03e1264",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "b7e89cf2-2210-45e4-82ca-48ecfc633262",
+			"id": "41aba968-ceec-4c71-ba3e-80c489b191d7",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94bcf293-af24-49df-9ea0-d13d0f5a6ade",
+			"id": "c25de3df-cd5d-4f5d-a2d5-5b2289b4f095",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "057d3bf9-be30-4f8d-b1d2-f3090117288d",
+			"id": "343b3f1d-f17d-4dee-8404-1658342ba92a",
 			"key": "pet_status",
 			"value": ""
 		}
