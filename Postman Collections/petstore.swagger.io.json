@@ -452,7 +452,7 @@
 			"name": "USER related",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Create list of users",
 					"id": "9eb009e6-103b-43cc-82a9-33528eeaf0bc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -491,31 +491,31 @@
 	],
 	"variable": [
 		{
-			"id": "fc987e44-2bdd-4339-99c5-8aa456b950ed",
+			"id": "0b622d4e-cda0-4a86-b29b-7c46e3bcb5dd",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54c5d9ee-9653-4673-8037-c3170402106f",
+			"id": "68033851-e9c6-4ffc-9c95-5aadd40a0832",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "46d8accc-3367-4c4e-b0c1-c19ac38e74e5",
+			"id": "0435d6b3-8260-4e8f-a613-ac645193ce6a",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a3eaf497-5dc8-4f2b-bd23-e6936f9408a3",
+			"id": "e7d48d56-c431-473b-b9ad-2c9660050d22",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "07dc8bf9-442c-41e7-8922-b72dc7f5a40e",
+			"id": "c34134db-f847-48da-81f1-91ce2b9aea1f",
 			"key": "pet_status",
 			"value": ""
 		}
