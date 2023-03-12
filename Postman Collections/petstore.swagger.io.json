@@ -604,6 +604,18 @@
 						"url": "{{url}}/user/Habakuk"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "5aa07e4b-44f0-4c1a-a64e-0831bd78eaa5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "9e3a1ed1-555a-4bb7-a2eb-51a7f5d0920f"
@@ -633,31 +645,31 @@
 	],
 	"variable": [
 		{
-			"id": "efe0cbe9-2f15-4efe-a65c-d1bd2b9052c3",
+			"id": "f723b0d5-742a-46e3-ab0b-40e465b7a8cd",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "61d395dd-75de-4eb7-bbcc-3daf3eb0ff6b",
+			"id": "929592ce-bb6e-4920-9fff-2531411ca464",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "248a0663-cbba-431e-872f-74bd08aee4dc",
+			"id": "5b4241c5-269c-4c42-83c3-7cb43dc7e918",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d4d65c60-ca29-420a-bc61-70387df3a46d",
+			"id": "92110100-4279-4102-a425-43a6b73931e0",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e67ffe53-c189-4227-884e-318a6ca5d84e",
+			"id": "4ceadfe3-50e3-482a-92a0-023edce19cf9",
 			"key": "pet_status",
 			"value": ""
 		}
