@@ -548,31 +548,31 @@
 	],
 	"variable": [
 		{
-			"id": "846acc0c-2761-42ec-994f-f1d0d0cf745b",
+			"id": "6fa64819-94f1-4d6b-8eff-42e77ffb9216",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "849748bb-fec0-4ce5-b46d-7cf812699cd7",
+			"id": "bdd9e293-8656-46b0-9de0-accd45f22270",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "d2ffa77c-c28d-445e-b775-2749392722d1",
+			"id": "c6cc2001-665b-40e8-a69a-00d82befa2d0",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "16f4544d-1a2d-43dd-bc90-1a9408a35807",
+			"id": "78a7b2b9-d6a3-4f52-b727-d5cf1b964513",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "be515ab0-bd50-4657-85ee-98f4caa03ebb",
+			"id": "cf4834a3-8611-4325-bb46-dbe20a91ce4d",
 			"key": "pet_status",
 			"value": ""
 		}
