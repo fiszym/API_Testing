@@ -6,348 +6,367 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
-			"item": [],
+			"name": "PET related",
+			"item": [
+				{
+					"name": "Find Pet by ID",
+					"id": "a5662644-ad66-4430-bc20-6a53424f55b9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/pet/{{pet_id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pet",
+								"{{pet_id}}"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "pending",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create PET",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a98b7f74-ae62-4448-8110-1b50d4aaca53",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.environment.set(\"pet_name\", jsonData.name);\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.environment.set(\"pet_id\", jsonData.id);\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.environment.set(\"pet_status\", jsonData.status);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8a2205ec-3650-4022-ba55-c242d9ca7949",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1234567890,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Demons\"\r\n  },\r\n  \"name\": \"Anakazel\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"pending\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/pet",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pet"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Image post",
+					"id": "dfb2b42a-3d08-401a-b357-248ab9e6a391",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"type": "text",
+									"key": "additionalMetadata",
+									"value": "jpg"
+								},
+								{
+									"type": "file",
+									"contentType": "image/jpeg",
+									"key": "file",
+									"src": "/X:/1405178501981.jpg"
+								}
+							]
+						},
+						"url": "{{url}}/pet/{{pet_id}}/uploadImage"
+					},
+					"response": []
+				},
+				{
+					"name": "Update PET",
+					"id": "f0b601ca-85bb-44d7-bc6e-aeb93dc8d310",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": {{pet_id}},\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Azazel\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/pet"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Pets by status",
+					"id": "5fb88441-0086-4517-8eab-9508aafdf0c4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/pet/findByStatus?status=available,pending",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pet",
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "available,pending"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Pets by tags",
+					"id": "314e67f5-cbd1-44f5-8115-834171978ff0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/pet/findByStatus?tags=pending",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pet",
+								"findByStatus"
+							],
+							"query": [
+								{
+									"key": "tags",
+									"value": "pending",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update PET with form data",
+					"id": "a27b89e9-db0c-4450-8f94-09e6e6c6a47b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Azazelek",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "status",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/pet/{{pet_id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pet",
+								"{{pet_id}}"
+							],
+							"query": [
+								{
+									"key": "petid",
+									"value": "{{pet_id}}",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Azazelek",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete PET",
+					"id": "e18913ba-68a2-43f4-af16-8c0948715283",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "api_key",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/pet/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pet",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "aeb6410e-1962-4f9e-82c8-dafa9ba3bdf3"
 		},
 		{
-			"name": "Find Pet by ID",
-			"id": "a5662644-ad66-4430-bc20-6a53424f55b9",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true,
-				"disabledSystemHeaders": {}
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"url": {
-					"raw": "{{url}}/pet/{{pet_id}}",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"pet",
-						"{{pet_id}}"
-					],
-					"query": [
-						{
-							"key": "status",
-							"value": "pending",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create PET",
-			"event": [
+			"name": "STORE related",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "a98b7f74-ae62-4448-8110-1b50d4aaca53",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.environment.set(\"pet_name\", jsonData.name);\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.environment.set(\"pet_id\", jsonData.id);\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.environment.set(\"pet_status\", jsonData.status);"
-						],
-						"type": "text/javascript"
-					}
+					"name": "New Request",
+					"id": "2ed2bfe3-f266-4f34-a0f9-cffb304bc694",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
-			"id": "8a2205ec-3650-4022-ba55-c242d9ca7949",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"id\": 1234567890,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Demons\"\r\n  },\r\n  \"name\": \"Anakazel\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"pending\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{url}}/pet",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"pet"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "1",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Image post",
-			"id": "dfb2b42a-3d08-401a-b357-248ab9e6a391",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"type": "text",
-							"key": "additionalMetadata",
-							"value": "jpg"
-						},
-						{
-							"type": "file",
-							"contentType": "image/jpeg",
-							"key": "file",
-							"src": "/X:/1405178501981.jpg"
-						}
-					]
-				},
-				"url": "{{url}}/pet/{{pet_id}}/uploadImage"
-			},
-			"response": []
-		},
-		{
-			"name": "Update PET",
-			"id": "f0b601ca-85bb-44d7-bc6e-aeb93dc8d310",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"id\": {{pet_id}},\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Azazel\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{url}}/pet"
-			},
-			"response": []
-		},
-		{
-			"name": "Find Pets by status",
-			"id": "5fb88441-0086-4517-8eab-9508aafdf0c4",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{url}}/pet/findByStatus?status=available,pending",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"pet",
-						"findByStatus"
-					],
-					"query": [
-						{
-							"key": "status",
-							"value": "available,pending"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Find Pets by tags",
-			"id": "314e67f5-cbd1-44f5-8115-834171978ff0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{url}}/pet/findByStatus?tags=pending",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"pet",
-						"findByStatus"
-					],
-					"query": [
-						{
-							"key": "tags",
-							"value": "pending",
-							"type": "text"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update PET with form data",
-			"id": "a27b89e9-db0c-4450-8f94-09e6e6c6a47b",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "name",
-							"value": "Azazelek",
-							"type": "text"
-						},
-						{
-							"key": "status",
-							"value": "status",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				},
-				"url": {
-					"raw": "{{url}}/pet/{{pet_id}}",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"pet",
-						"{{pet_id}}"
-					],
-					"query": [
-						{
-							"key": "petid",
-							"value": "{{pet_id}}",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "name",
-							"value": "Azazelek",
-							"disabled": true
-						},
-						{
-							"key": "status",
-							"value": "pending",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete PET",
-			"id": "e18913ba-68a2-43f4-af16-8c0948715283",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "api_key",
-						"value": "",
-						"type": "text"
-					},
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{url}}/pet/1",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"pet",
-						"1"
-					],
-					"query": [
-						{
-							"key": "",
-							"value": null,
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
+			"id": "8c8ce59b-a418-4d48-8e60-2d6b48a62159"
 		}
 	],
 	"event": [
@@ -374,31 +393,31 @@
 	],
 	"variable": [
 		{
-			"id": "e4d04b62-653b-43c2-82b8-5d00c41daeb3",
+			"id": "8be69cd7-c095-4e8c-ba16-28d39b4b45ca",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e1f31302-9acf-4a3a-aaf9-c3980fa230a5",
+			"id": "768835cf-72cf-4513-81bf-e1a37cadf550",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "e66ac264-37d8-498b-beab-c7a9ff7febe9",
+			"id": "fbfc3384-19d2-4120-a160-179062dcf8b1",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f521283-35b9-4b9b-b51e-c8973c18d380",
+			"id": "406fc8ee-f771-4a6d-819c-2f6ab326ee05",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3823aaa9-27e9-4547-bc47-ab9f75241e98",
+			"id": "c6cf21c8-0253-4a69-a502-8c848f25ac4c",
 			"key": "pet_status",
 			"value": ""
 		}
