@@ -86,7 +86,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 1234567890,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Demons\"\r\n  },\r\n  \"name\": \"Anakazel\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"pending\"\r\n}",
+							"raw": "{\r\n  \"id\": 1234567890,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Demons\"\r\n  },\r\n  \"name\": \"Anakazel\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"damned\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -507,31 +507,31 @@
 	],
 	"variable": [
 		{
-			"id": "6c781984-a0d9-4484-bcd9-9708a30ff05f",
+			"id": "1de0bc44-c6f5-4e46-873a-1630f9bc166d",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a31bab76-859f-4a7b-8c63-3c60c85a53ff",
+			"id": "20dafe54-108a-4816-a671-f87cfd791b0c",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "2830bb0c-4a3d-42e3-a0b2-1a6f953a7e3c",
+			"id": "9738b806-612d-4c59-ba2a-cd7316bd151f",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "14360068-c338-42ce-9732-61c606bdd379",
+			"id": "268c0303-bde1-4f00-9908-0fba219c9890",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bf5477f2-1c70-4e2a-aa30-2f02ab1f8190",
+			"id": "e014e9f7-1456-4c12-a505-b05b8fe12849",
 			"key": "pet_status",
 			"value": ""
 		}
