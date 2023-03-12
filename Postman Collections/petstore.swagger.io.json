@@ -354,7 +354,7 @@
 			"name": "STORE related",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Create Order for pet",
 					"event": [
 						{
 							"listen": "test",
@@ -507,31 +507,31 @@
 	],
 	"variable": [
 		{
-			"id": "1de0bc44-c6f5-4e46-873a-1630f9bc166d",
+			"id": "1e3d9d69-e8a1-4863-b49f-490c3caebf44",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "20dafe54-108a-4816-a671-f87cfd791b0c",
+			"id": "bb4d5466-668c-4332-b8d8-60ff6cf8c745",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "9738b806-612d-4c59-ba2a-cd7316bd151f",
+			"id": "e2bb5acb-3bf2-4a18-baf7-71f3f255c190",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "268c0303-bde1-4f00-9908-0fba219c9890",
+			"id": "32df0148-1fa3-4d26-bf43-11d14ca49415",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e014e9f7-1456-4c12-a505-b05b8fe12849",
+			"id": "267ff54e-c912-44d1-b618-4ec69d7f0ebb",
 			"key": "pet_status",
 			"value": ""
 		}
