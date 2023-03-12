@@ -370,7 +370,12 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"id\": 0,\r\n  \"petId\": 0,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2023-03-12T15:16:18.227Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}"
+							"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 123,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2023-03-12T15:16:18.227Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": "{{url}}/store/order"
 					},
@@ -404,31 +409,31 @@
 	],
 	"variable": [
 		{
-			"id": "e4d4b942-7da9-4516-833d-bbab58dbf691",
+			"id": "455af6b2-0b71-443d-9f29-b311c6a2a8ae",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f90f550c-cbcf-41d9-9968-462d4bfcaa64",
+			"id": "8c8c4833-bfdc-44ea-90bd-2d9e7af8ed27",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "bbec2041-9fa4-4c4a-84bf-acb0f8bc0594",
+			"id": "cd9c4891-1d30-42dc-b98c-933babbfe83c",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd7c5221-1627-4542-900a-dad8fa69c114",
+			"id": "3a8c781a-876d-4b42-adba-24a45b31ab2c",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dd15a049-4322-44f6-88f4-6291c681ca8d",
+			"id": "81468414-278b-4fa2-b222-6e02ba523d71",
 			"key": "pet_status",
 			"value": ""
 		}
