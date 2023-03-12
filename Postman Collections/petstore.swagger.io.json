@@ -351,7 +351,7 @@
 			"id": "aeb6410e-1962-4f9e-82c8-dafa9ba3bdf3"
 		},
 		{
-			"name": "New Folder",
+			"name": "STORE related",
 			"item": [],
 			"id": "8c8ce59b-a418-4d48-8e60-2d6b48a62159"
 		}
@@ -380,31 +380,31 @@
 	],
 	"variable": [
 		{
-			"id": "824c2707-a01b-4605-96e0-68190c5105cc",
+			"id": "d5b0025a-f5cb-442e-8ae1-63c709ca1c4c",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d09d952a-1d46-4a36-a380-b29064289688",
+			"id": "c46ccecb-f0b5-47b5-8c1e-4a22ca0c25bf",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "f779ebaa-3d87-4b6d-be71-0f161a70ba14",
+			"id": "422106c3-77fd-4cf3-b22b-aefd05892d70",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "53566f66-e8f8-4fe2-9b7e-c0cac60f4ef8",
+			"id": "cd99c891-0969-4c5a-9df7-c2ae29366bb5",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "58d38fe7-6f6e-4ed1-adc0-4a44daf2d3c5",
+			"id": "993c36e3-b48d-4782-bec8-77827a454854",
 			"key": "pet_status",
 			"value": ""
 		}
