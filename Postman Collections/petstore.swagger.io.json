@@ -521,7 +521,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Create user",
 					"event": [
 						{
 							"listen": "test",
@@ -605,31 +605,31 @@
 	],
 	"variable": [
 		{
-			"id": "e4b00d33-3323-4073-88ae-8ebb93adff39",
+			"id": "1189dc36-ae03-49c8-89bf-34898eba2285",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "55d6181a-ed81-4360-82e2-44d7bf12aaee",
+			"id": "bc56e54d-2d8f-49b0-9fae-34fafbd7e12a",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "12a9d928-7e6b-4ed3-89bb-c59690eb1975",
+			"id": "7dac5fb8-c0e4-4901-8a24-4d8f181567f4",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8001c081-a1f4-4e15-bd08-436b0d129959",
+			"id": "38fc7d28-9003-493c-84f7-13cb9c859881",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ae42f7eb-b39d-470d-aa6a-bc12a58e5446",
+			"id": "0e22bc0d-c613-48fd-979b-43aef7840635",
 			"key": "pet_status",
 			"value": ""
 		}
