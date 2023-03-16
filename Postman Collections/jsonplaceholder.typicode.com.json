@@ -299,7 +299,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "8e985be7-cd24-4f7b-a405-ac4abaf19c71",
+				"id": "f9c8b510-9149-4ad1-8f17-7c3a02263092",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -309,7 +309,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b3401a18-9223-4127-8bb1-66608eb19b54",
+				"id": "7de802f7-598d-4e93-bbd1-56a5bf400bc4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -319,35 +319,41 @@
 	],
 	"variable": [
 		{
-			"id": "463b979d-daad-4fe5-8e26-2b3ec0f43603",
+			"id": "bc68fad2-128f-4344-9ba9-aa0ac04a1ef2",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "0788690a-efe7-4596-903a-71c0da1420f2",
+			"id": "1ad77cfa-c355-4dd6-bf44-5177c0d85447",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ac68a62-d3f5-4468-9f10-9f2db5981fb6",
+			"id": "a5823d2b-43f9-4448-bff3-bfb0e1209f92",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5efec4a9-3824-4177-9df2-e837420af1d9",
+			"id": "0f181f02-d031-4c38-a86f-97e32d886e1a",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "90e26cbb-e65f-4b22-81e5-a6828b246acc",
+			"id": "5c131f47-df27-49a4-bfdf-c48a521b5c82",
 			"key": "body",
 			"value": "",
 			"type": "string",
 			"disabled": true
+		},
+		{
+			"id": "52feacf6-39fe-4e9a-abf8-71d8d3d5dca3",
+			"key": "param",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
