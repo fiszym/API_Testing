@@ -664,7 +664,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/user/logout"
 					},
 					"response": []
 				}
@@ -696,31 +697,31 @@
 	],
 	"variable": [
 		{
-			"id": "1f7be0cd-c6db-4ccd-a08a-7414b85e0923",
+			"id": "9aef41ab-6adc-4f8a-9e73-b28829e30fb9",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a746746-41d6-41ac-8d13-456b47faeae5",
+			"id": "e79ff071-52dc-4956-8d04-138cd5a4a830",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "2c0cef74-e5b8-4ee7-9c32-b9d05eaa393e",
+			"id": "dc5c7b52-bdf3-42b2-8760-ef0ad2a72f27",
 			"key": "id2",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "634d254c-1505-4ff4-9116-f20af0111849",
+			"id": "4152aac9-ed4f-4b63-aa70-d4da8b010281",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "38e6f9c0-9f87-4cfa-935a-f1cb37a16a51",
+			"id": "2848f598-1077-464a-9290-a66d79a7f279",
 			"key": "pet_status",
 			"value": ""
 		}
