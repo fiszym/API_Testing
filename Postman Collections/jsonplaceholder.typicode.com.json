@@ -145,7 +145,13 @@
 							"pm.collectionVariables.set(\"id\", jsonData.id);\r",
 							"\r",
 							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"userId\", jsonData.userId);"
+							"pm.collectionVariables.set(\"userId\", jsonData.userId);\r",
+							"\r",
+							"var jsonData = pm.response.json ();\r",
+							"pm.collectionVariables.set(\"title\", jsonData.title);\r",
+							"\r",
+							"var jsonData = pm.response.json ();\r",
+							"pm.collectionVariables.set(\"par\", jsonData.anotherParam);"
 						],
 						"type": "text/javascript"
 					}
@@ -166,7 +172,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"foo\",\r\n    \"body\": \"bar\",\r\n    \"userId\": \"1\"\r\n    \r\n}\r\n",
+					"raw": "{\r\n    \"title\": \"Tit\",\r\n    \"body\": \"Bod\",\r\n    \"userId\": \"123\",\r\n    \"anotherParam\": \"testParam\"\r\n    \r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -313,31 +319,31 @@
 	],
 	"variable": [
 		{
-			"id": "a61243db-68e9-4501-b0e4-a250bc999e6c",
+			"id": "463b979d-daad-4fe5-8e26-2b3ec0f43603",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "15277d2b-9bd1-4feb-88b1-598e83114c79",
+			"id": "0788690a-efe7-4596-903a-71c0da1420f2",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54b06d34-432f-4977-a4b4-f857f892542b",
+			"id": "3ac68a62-d3f5-4468-9f10-9f2db5981fb6",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6deddd78-fe06-4fe2-a689-6e481b2cc84b",
+			"id": "5efec4a9-3824-4177-9df2-e837420af1d9",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b93efa5-ccc4-4c98-97cd-b21123c3e53d",
+			"id": "90e26cbb-e65f-4b22-81e5-a6828b246acc",
 			"key": "body",
 			"value": "",
 			"type": "string",
