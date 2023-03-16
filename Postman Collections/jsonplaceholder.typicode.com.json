@@ -199,6 +199,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "063394bf-e6da-415a-b821-d93b1de0b83d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -225,31 +237,31 @@
 	],
 	"variable": [
 		{
-			"id": "ec80786b-705e-40fb-b15b-6059e41348db",
+			"id": "d0ddb81f-f15d-4c55-a601-95cf37e1a92c",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "fbc06418-1e8d-45be-bef6-953be8212809",
+			"id": "04a1e277-245d-4e74-81c8-ed7df6d232a5",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "75df1491-3505-44ea-bc3f-17cb6c561783",
+			"id": "c863c719-7bf5-41a1-8a35-315134c9ea61",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "109574e6-d869-4b4e-9bdd-4c65ddae2c6f",
+			"id": "af904cb3-2d2e-4a00-985e-57a557abc534",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "93e2d2fd-918e-4aa6-9924-741bfdb36f93",
+			"id": "115d22e8-5371-4af4-ab43-ccd6a9d805c0",
 			"key": "body",
 			"value": "",
 			"type": "string",
