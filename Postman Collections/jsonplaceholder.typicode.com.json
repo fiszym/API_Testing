@@ -7,8 +7,161 @@
 	"item": [
 		{
 			"name": "Posts",
-			"item": [],
+			"item": [
+				{
+					"name": "GET resource",
+					"id": "d2439d25-cff8-4975-b47d-a0056b8aba80",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/posts/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "10",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST smth",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0b0f6098-984f-4ebb-a531-06c946d555c4",
+								"exec": [
+									"pm.test(\"Status code is correct\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.collectionVariables.set(\"id\", jsonData.id);\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.collectionVariables.set(\"userId\", jsonData.userId);\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.collectionVariables.set(\"title\", jsonData.title);\r",
+									"\r",
+									"var jsonData = pm.response.json ();\r",
+									"pm.collectionVariables.set(\"par\", jsonData.anotherParam);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9d2ba3f4-d305-4d98-bdff-7232a867a020",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Tit\",\r\n    \"body\": \"Bod\",\r\n    \"userId\": \"123\",\r\n    \"anotherParam\": \"testParam\"\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET nested comments",
+					"id": "9ceec15b-ca69-4c8d-bea9-af8b6eee434d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/posts/{{userId}}/comments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"{{userId}}",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "10",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "b92d814c-5504-4014-8754-9f47482a1946"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "4e686bf7-2498-4a91-81fe-2bba0bc97c00"
 		},
 		{
 			"name": "GET todos",
@@ -99,153 +252,6 @@
 			"response": []
 		},
 		{
-			"name": "GET resource",
-			"id": "d2439d25-cff8-4975-b47d-a0056b8aba80",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{url}}/posts/",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"posts",
-						""
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "3",
-							"disabled": true
-						},
-						{
-							"key": "userId",
-							"value": "10",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST smth",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "0b0f6098-984f-4ebb-a531-06c946d555c4",
-						"exec": [
-							"pm.test(\"Status code is correct\", function () {\r",
-							"    pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
-							"});\r",
-							"\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"id\", jsonData.id);\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"userId\", jsonData.userId);\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"title\", jsonData.title);\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"par\", jsonData.anotherParam);"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "9d2ba3f4-d305-4d98-bdff-7232a867a020",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Tit\",\r\n    \"body\": \"Bod\",\r\n    \"userId\": \"123\",\r\n    \"anotherParam\": \"testParam\"\r\n    \r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{url}}/posts",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"posts"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "123",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET nested comments",
-			"id": "9ceec15b-ca69-4c8d-bea9-af8b6eee434d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{url}}/posts/{{userId}}/comments",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"posts",
-						"{{userId}}",
-						"comments"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "3",
-							"disabled": true
-						},
-						{
-							"key": "userId",
-							"value": "10",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "GET nested photos",
 			"id": "07827050-1e7b-49d1-92f0-9c0cd0a929c7",
 			"protocolProfileBehavior": {
@@ -324,44 +330,44 @@
 	],
 	"variable": [
 		{
-			"id": "ee7e75ad-5d60-43ea-aa53-af9465375456",
+			"id": "ad643ba7-4a67-45af-a579-11c04feab824",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "e62856cd-82da-4c03-9c5b-036fd594bafa",
+			"id": "1dd8e28b-9c2e-4bf5-91b4-6b6e8dd74b05",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b3779194-3ce4-4831-8673-fd7db336f3cc",
+			"id": "ba6ff9f4-364b-483f-a3ae-0d34f8036aaf",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf91c1ec-ce88-436c-9e32-8f11df269e4f",
+			"id": "944d1b72-1678-4ae7-bf62-4950b852b6eb",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "468b878f-8fd4-4dc2-af4f-6ec6f332afcc",
+			"id": "25440219-801e-474a-af7d-7e765f893f1c",
 			"key": "body",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "be1e69ec-356d-475c-8049-c7e28e7c3239",
+			"id": "3ad8c7ea-7581-4fc5-a816-9782d87baaea",
 			"key": "param",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c766cfc8-2369-4c90-92db-9dbe0bb73fa3",
+			"id": "79c2126e-c43b-4df1-b219-86f62a91b90c",
 			"key": "par",
 			"value": ""
 		}
