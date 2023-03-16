@@ -526,7 +526,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "12878a49-86de-46c8-a094-33972b98d29e",
+								"id": "7e0f0675-9303-4913-8353-f9815947f4ef",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -534,7 +534,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json ();\r",
-									"pm.environment.set(\"user_name\", jsonData.id);\r",
+									"pm.collectionVariables.set(\"user_name\", jsonData.id);\r",
 									""
 								],
 								"type": "text/javascript"
@@ -543,7 +543,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f1dc69f5-6418-4409-990a-071655f14f2c",
+								"id": "cf4c699f-ddfe-48db-a166-c05d33dcc06b",
 								"exec": [
 									""
 								],
@@ -697,44 +697,44 @@
 	],
 	"variable": [
 		{
-			"id": "d1fe7295-6357-484f-99ac-53f37c4e0470",
+			"id": "1d820934-41a0-40b3-9114-b0972b999bbf",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ed16d38-c6bb-47dc-8406-5a98e9bd9e52",
+			"id": "2deb603c-384f-4b52-a0e1-8712c7ffdb36",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "9b8123e8-04f6-4080-944c-495ec2bb0123",
+			"id": "0da44f58-d34b-4a1d-8269-2c8ac0dd2bbc",
 			"key": "id2",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "14a247ca-15c6-4ad4-b2c0-b88fa3c4c772",
+			"id": "9d5ce7cd-11d9-4cab-a2f7-7afc4c1d46f2",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1ed90fb0-5422-4c7f-ac82-b39935c1237a",
+			"id": "31958522-154d-41d4-9c98-c24e3d2e1d4a",
 			"key": "pet_status",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e846785-e6e7-4202-97fd-9fd5b81bb1d7",
+			"id": "8952157f-9a42-445d-92c2-8bbb6ed61834",
 			"key": "order_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c90e44fd-f84e-46e8-8970-c5ce9be4d4f6",
+			"id": "4a73816f-1758-49a2-9470-0b9d2867b40d",
 			"key": "user_name",
 			"value": "",
 			"type": "string"
