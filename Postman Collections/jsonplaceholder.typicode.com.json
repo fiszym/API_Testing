@@ -55,6 +55,10 @@
 					"script": {
 						"id": "c0d2f8b7-d423-4a75-be62-fe214ce21e82",
 						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -129,7 +133,7 @@
 	],
 	"variable": [
 		{
-			"id": "f23feee7-97c3-480a-8a9c-b177778a463b",
+			"id": "99e014bb-63b0-40b9-9731-73e5690f442d",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
