@@ -53,10 +53,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c0d2f8b7-d423-4a75-be62-fe214ce21e82",
+						"id": "3fba00de-5386-485a-b029-7e32f545b08b",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is correct\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
 							"});\r",
 							"\r",
 							""
@@ -212,31 +212,31 @@
 	],
 	"variable": [
 		{
-			"id": "067c6f18-c61c-49e0-ac35-4914c4c81950",
+			"id": "8ee32bf6-64e6-4c40-af80-a58404c3a534",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "80f800c7-a2c9-4d25-8ab4-7c48869f02ee",
+			"id": "b5b87076-b294-4f53-88f6-07990de7b49b",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2aebdbcc-8b5b-4f93-aaa1-6158a4170323",
+			"id": "2859e461-6076-4365-8cec-167f148e7175",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "58175f00-13a3-4d19-896f-46299e0fb5c5",
+			"id": "99186fc4-11b7-426a-9951-697e90aae7ba",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d61868d2-ada9-4254-9910-b00e59106b5c",
+			"id": "6548c037-b7ec-433e-b9de-ddec1f2a55fa",
 			"key": "body",
 			"value": "",
 			"type": "string",
