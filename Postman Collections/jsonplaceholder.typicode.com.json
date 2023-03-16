@@ -129,6 +129,78 @@
 			"response": []
 		},
 		{
+			"name": "POST smth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b0f6098-984f-4ebb-a531-06c946d555c4",
+						"exec": [
+							"pm.test(\"Status code is correct\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
+							"});\r",
+							"\r",
+							"\r",
+							"var jsonData = pm.response.json ();\r",
+							"pm.collectionVariables.set(\"id\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "9d2ba3f4-d305-4d98-bdff-7232a867a020",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "foo",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "bar",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/posts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GET nested comments",
 			"id": "9ceec15b-ca69-4c8d-bea9-af8b6eee434d",
 			"protocolProfileBehavior": {
@@ -213,78 +285,6 @@
 			"response": []
 		},
 		{
-			"name": "POST smth",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "0b0f6098-984f-4ebb-a531-06c946d555c4",
-						"exec": [
-							"pm.test(\"Status code is correct\", function () {\r",
-							"    pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
-							"});\r",
-							"\r",
-							"\r",
-							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"id\", jsonData.id);"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "9d2ba3f4-d305-4d98-bdff-7232a867a020",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "accept",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "title",
-							"value": "foo",
-							"type": "text"
-						},
-						{
-							"key": "body",
-							"value": "bar",
-							"type": "text"
-						},
-						{
-							"key": "userId",
-							"value": "123",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "{{url}}/posts",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"posts"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "123",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Delete resource",
 			"id": "063394bf-e6da-415a-b821-d93b1de0b83d",
 			"protocolProfileBehavior": {
@@ -321,31 +321,31 @@
 	],
 	"variable": [
 		{
-			"id": "9e81ae8b-404b-446c-becd-1ee9976ef8b1",
+			"id": "c2778eca-de04-402f-b743-0abbb475248b",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "ffa3ecf6-8f05-4d86-85b7-a1e471d95593",
+			"id": "4b141ef6-fa4a-443c-8a66-81dfaa316b7c",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7014723-a243-43b9-8209-faa3d077497f",
+			"id": "6c298a34-2053-40d6-81f8-a328744033e0",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7bf09c48-e21b-448d-8cca-dc0e0485313e",
+			"id": "60ba4adf-f54a-43a7-8439-e7f6a41f73cb",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e38a1e8a-0347-4034-b799-3fca1d922d5b",
+			"id": "b8592fae-2d35-4e6c-a7d2-33f220f4fbdc",
 			"key": "body",
 			"value": "",
 			"type": "string",
