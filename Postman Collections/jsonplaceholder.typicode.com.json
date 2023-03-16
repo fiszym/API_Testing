@@ -136,15 +136,22 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "{{url}}/posts/",
+					"raw": "{{url}}/posts/{{userId}}/comments",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"posts",
-						""
+						"{{userId}}",
+						"comments"
 					],
 					"query": [
 						{
@@ -272,31 +279,31 @@
 	],
 	"variable": [
 		{
-			"id": "1be9baae-24da-46c1-9bc4-800dadaad98d",
+			"id": "d993c8f4-0714-45e8-a990-ef56ef4fcfb1",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "f924585a-1e45-4441-8e09-5fd391437230",
+			"id": "f8a4aa0d-26de-43f2-a215-8102369af005",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b4fdf255-2eb7-416e-a482-3e8c496c1f12",
+			"id": "aa5bd15d-e194-46ed-874a-53787a79822f",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fbe46bcf-ce19-4466-a7c6-303ad3c33b56",
+			"id": "1119b8bc-6bc3-495d-af97-e70f4f3ec4aa",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fe167888-a0f9-4ecf-812e-8674a54fdf94",
+			"id": "03e34896-fbba-4780-a217-ed944e0c3a3e",
 			"key": "body",
 			"value": "",
 			"type": "string",
