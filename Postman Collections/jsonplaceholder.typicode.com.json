@@ -109,7 +109,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "POST smth",
 			"id": "9d2ba3f4-d305-4d98-bdff-7232a867a020",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -145,7 +145,7 @@
 	],
 	"variable": [
 		{
-			"id": "d8fa75ac-b54b-4af3-b99f-1b4aa256cffa",
+			"id": "bb657838-57b3-4452-8be2-f404eeb8dd5b",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
