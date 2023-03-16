@@ -104,7 +104,30 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{url}}/posts/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -189,13 +212,13 @@
 	],
 	"variable": [
 		{
-			"id": "e4da330f-721e-47ae-919d-2475e1d4ab37",
+			"id": "3ccd13e8-9b3f-46d7-8aad-2f120db9ce02",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "d89e72b0-2e69-4498-acc1-8f76291d871f",
+			"id": "589a49bf-8397-485c-bf30-14cc45231ab5",
 			"key": "id",
 			"value": ""
 		}
