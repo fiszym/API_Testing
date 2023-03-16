@@ -209,31 +209,31 @@
 	],
 	"variable": [
 		{
-			"id": "fd07917b-66e9-40cc-9900-129f57ecd6da",
+			"id": "d490dbcf-939b-4787-9c18-4938881a12c6",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "b49fedb0-abe0-4751-bb83-7173ce554003",
+			"id": "635b8b39-c5c3-4f2f-ac69-061df8d0c5c0",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7fd6240-087a-4c48-9233-47a19a2f829d",
+			"id": "02ba410e-a225-4a55-a5bf-387687b68c1b",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0c670026-407f-4bd5-9916-0892435eb8f6",
+			"id": "2a15cfde-52d0-4e35-b8f8-9d344aae2a61",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9127274c-9346-424a-8a4c-5a66d5fff753",
+			"id": "937e2c29-1997-4335-b8ce-229e51e1cc91",
 			"key": "body",
 			"value": "",
 			"type": "string",
