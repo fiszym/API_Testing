@@ -49,6 +49,18 @@
 		},
 		{
 			"name": "POST todos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c0d2f8b7-d423-4a75-be62-fe214ce21e82",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "8f108343-e22e-4308-95b5-1fdeb2abe39b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -57,12 +69,9 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/todos/?id=202",
-					"protocol": "https",
+					"raw": "{{url}}/todos/?id=202",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
+						"{{url}}"
 					],
 					"path": [
 						"todos",
@@ -120,7 +129,7 @@
 	],
 	"variable": [
 		{
-			"id": "59b58e8d-13c7-4a92-9040-d2c58769dd00",
+			"id": "f23feee7-97c3-480a-8a9c-b177778a463b",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
