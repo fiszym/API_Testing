@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "cc24e2f6-2876-4e84-8008-77e4fda6bee0",
+		"name": "{JSON} Placeholder API jsonplaceholder.typicode.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET todos",
+			"id": "88d8a2f7-94c6-42be-a572-6fde71b4feb4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/todos/?title=ipsam aperiam voluptates qui",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "ipsam aperiam voluptates qui"
+						},
+						{
+							"key": "completed",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "200",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST todos",
+			"id": "8f108343-e22e-4308-95b5-1fdeb2abe39b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/todos/?id=202",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "202"
+						},
+						{
+							"key": "userId",
+							"value": "20",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7ae8039e-6fb2-4c41-b26a-d328e8f6cebe",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b24c6b25-f7b5-40c0-84bc-865aee0ff0a7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "4e9dbb56-53dc-4197-8b06-1b620115d6b4",
+			"key": "url",
+			"value": "https://jsonplaceholder.typicode.com",
+			"type": "string"
+		}
+	]
+}
