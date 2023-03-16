@@ -180,13 +180,13 @@
 	],
 	"variable": [
 		{
-			"id": "4c539412-093f-4341-b01c-183e0807298b",
+			"id": "3e35eca4-65f6-4ccd-a011-3c2f8d881402",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "db9802ff-c910-485b-9ef1-1765cc21b96e",
+			"id": "1348ef45-2021-4b01-b7e4-5be60150c20d",
 			"key": "id",
 			"value": ""
 		}
