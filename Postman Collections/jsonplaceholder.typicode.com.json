@@ -159,7 +159,7 @@
 			"id": "b92d814c-5504-4014-8754-9f47482a1946"
 		},
 		{
-			"name": "New Folder",
+			"name": "Albums",
 			"item": [],
 			"id": "4e686bf7-2498-4a91-81fe-2bba0bc97c00"
 		},
@@ -330,44 +330,44 @@
 	],
 	"variable": [
 		{
-			"id": "ad643ba7-4a67-45af-a579-11c04feab824",
+			"id": "a71fb073-6598-4398-97c2-3a85221fd183",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "1dd8e28b-9c2e-4bf5-91b4-6b6e8dd74b05",
+			"id": "4ffb6ac8-cf64-4d23-be77-090453a8f797",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba6ff9f4-364b-483f-a3ae-0d34f8036aaf",
+			"id": "9d70d27b-a65c-40b2-a1f0-16ac079c9b15",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "944d1b72-1678-4ae7-bf62-4950b852b6eb",
+			"id": "7e980798-7f83-48ce-8871-40ac467de87a",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "25440219-801e-474a-af7d-7e765f893f1c",
+			"id": "a217db40-d7fb-4f37-bd09-dbc2290edd73",
 			"key": "body",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "3ad8c7ea-7581-4fc5-a816-9782d87baaea",
+			"id": "2e40f5c0-7bbf-4f8b-8935-5844f3da52c1",
 			"key": "param",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "79c2126e-c43b-4df1-b219-86f62a91b90c",
+			"id": "592ce2ec-aabf-4893-ba7d-f789732a3e0c",
 			"key": "par",
 			"value": ""
 		}
