@@ -116,13 +116,13 @@
 					"script": {
 						"id": "0b0f6098-984f-4ebb-a531-06c946d555c4",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is correct\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
 							"});\r",
 							"\r",
 							"\r",
 							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"user_name\", jsonData.id);"
+							"pm.collectionVariables.set(\"id\", jsonData.id);"
 						],
 						"type": "text/javascript"
 					}
@@ -134,7 +134,24 @@
 			},
 			"request": {
 				"method": "POST",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{url}}/posts/?id=123",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		}
@@ -163,13 +180,13 @@
 	],
 	"variable": [
 		{
-			"id": "fd6dba96-e2bf-419f-adfb-2a1e5f8e98f5",
+			"id": "4c539412-093f-4341-b01c-183e0807298b",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "f122e9c7-b928-44ca-98d4-6c33c7404ec5",
+			"id": "db9802ff-c910-485b-9ef1-1765cc21b96e",
 			"key": "id",
 			"value": ""
 		}
