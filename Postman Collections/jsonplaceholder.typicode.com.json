@@ -201,7 +201,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Delete resource",
 			"id": "063394bf-e6da-415a-b821-d93b1de0b83d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -237,31 +237,31 @@
 	],
 	"variable": [
 		{
-			"id": "d0ddb81f-f15d-4c55-a601-95cf37e1a92c",
+			"id": "46647131-5999-4982-81fa-100b3faaf5d1",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "04a1e277-245d-4e74-81c8-ed7df6d232a5",
+			"id": "87403282-2e08-4a16-a92f-c8be6391b2d7",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c863c719-7bf5-41a1-8a35-315134c9ea61",
+			"id": "cb336d8e-ddb8-482e-bc5f-a1f2174883d9",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af904cb3-2d2e-4a00-985e-57a557abc534",
+			"id": "30742729-e199-4d14-874a-2806b2d7281a",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "115d22e8-5371-4af4-ab43-ccd6a9d805c0",
+			"id": "114b6b8f-c6f9-44d4-922b-cb44664254c2",
 			"key": "body",
 			"value": "",
 			"type": "string",
