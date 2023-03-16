@@ -163,10 +163,15 @@
 	],
 	"variable": [
 		{
-			"id": "2754ebb9-7ff4-4c7c-ae82-9a61d056c5e5",
+			"id": "fd6dba96-e2bf-419f-adfb-2a1e5f8e98f5",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
+		},
+		{
+			"id": "f122e9c7-b928-44ca-98d4-6c33c7404ec5",
+			"key": "id",
+			"value": ""
 		}
 	]
 }
