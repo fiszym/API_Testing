@@ -129,7 +129,7 @@
 			"response": []
 		},
 		{
-			"name": "GET nested resource",
+			"name": "GET nested posts",
 			"id": "9ceec15b-ca69-4c8d-bea9-af8b6eee434d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -279,31 +279,31 @@
 	],
 	"variable": [
 		{
-			"id": "d993c8f4-0714-45e8-a990-ef56ef4fcfb1",
+			"id": "62a3689d-6719-4d73-81be-627db247ff85",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "f8a4aa0d-26de-43f2-a215-8102369af005",
+			"id": "d59925ef-6a67-4533-88e7-27a0d0280ae3",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aa5bd15d-e194-46ed-874a-53787a79822f",
+			"id": "a975d81e-52da-4641-bef0-a86469efb0ba",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1119b8bc-6bc3-495d-af97-e70f4f3ec4aa",
+			"id": "c671fea0-7dbf-478f-a12c-827e8da0d97f",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03e34896-fbba-4780-a217-ed944e0c3a3e",
+			"id": "aee164e8-459c-43da-be93-6b9b555667b3",
 			"key": "body",
 			"value": "",
 			"type": "string",
