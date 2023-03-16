@@ -110,12 +110,30 @@
 		},
 		{
 			"name": "POST smth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b0f6098-984f-4ebb-a531-06c946d555c4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"var jsonData = pm.response.json ();\r",
+							"pm.collectionVariables.set(\"user_name\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "9d2ba3f4-d305-4d98-bdff-7232a867a020",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": []
 			},
 			"response": []
@@ -145,7 +163,7 @@
 	],
 	"variable": [
 		{
-			"id": "bb657838-57b3-4452-8be2-f404eeb8dd5b",
+			"id": "2754ebb9-7ff4-4c7c-ae82-9a61d056c5e5",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
