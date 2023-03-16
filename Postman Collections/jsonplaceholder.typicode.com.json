@@ -134,21 +134,30 @@
 			},
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "SON.stringify({\r\n    title: 'foo',\r\n    body: 'bar',\r\n    userId: 1,\r\n  })"
+				},
 				"url": {
-					"raw": "{{url}}/posts/?id=123",
+					"raw": "{{url}}/posts",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"posts",
-						""
+						"posts"
 					],
 					"query": [
 						{
 							"key": "id",
 							"value": "123",
-							"type": "text"
+							"disabled": true
 						}
 					]
 				}
@@ -180,13 +189,13 @@
 	],
 	"variable": [
 		{
-			"id": "86f3c0b6-aa8f-41ac-b0a5-653d87163d1e",
+			"id": "e4da330f-721e-47ae-919d-2475e1d4ab37",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "fd22d2fa-a041-4bd1-afca-eb19b3b8db8e",
+			"id": "d89e72b0-2e69-4498-acc1-8f76291d871f",
 			"key": "id",
 			"value": ""
 		}
