@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
+			"name": "Posts",
 			"item": [],
 			"id": "b92d814c-5504-4014-8754-9f47482a1946"
 		},
@@ -324,44 +324,44 @@
 	],
 	"variable": [
 		{
-			"id": "e9b32b1b-2461-4b6a-b1b1-37c4c546b514",
+			"id": "ee7e75ad-5d60-43ea-aa53-af9465375456",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "80258b47-56d3-4942-a0d5-b95b96b9b14e",
+			"id": "e62856cd-82da-4c03-9c5b-036fd594bafa",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f9149af4-e925-4d57-b011-1778496fe25a",
+			"id": "b3779194-3ce4-4831-8673-fd7db336f3cc",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f8cb4a26-4d38-4bc0-aa97-f3ce67bc0f7e",
+			"id": "cf91c1ec-ce88-436c-9e32-8f11df269e4f",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c0514d06-a062-4791-85a2-afa892161340",
+			"id": "468b878f-8fd4-4dc2-af4f-6ec6f332afcc",
 			"key": "body",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "65e7c9e1-290d-40fd-b6e9-a960da95c44a",
+			"id": "be1e69ec-356d-475c-8049-c7e28e7c3239",
 			"key": "param",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "095fb527-2a2e-442e-b01b-5bdc1ea2990b",
+			"id": "c766cfc8-2369-4c90-92db-9dbe0bb73fa3",
 			"key": "par",
 			"value": ""
 		}
