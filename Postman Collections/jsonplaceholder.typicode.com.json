@@ -301,7 +301,7 @@
 			"id": "116d4eab-07dd-4763-b2a8-de14ecf24051"
 		},
 		{
-			"name": "New Folder",
+			"name": "Other",
 			"item": [],
 			"id": "036ec084-2182-4aef-9d10-aecaabf21638"
 		},
@@ -342,44 +342,44 @@
 	],
 	"variable": [
 		{
-			"id": "c2436fec-345a-447c-ad10-84460d7f9c76",
+			"id": "7b4774fa-be47-433f-9de2-6bc49bf7b5ee",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "f98d9afd-0712-41af-8f21-26611647612c",
+			"id": "cb3c956c-0c2f-4d0a-b93a-f10803d6ce58",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f9a0f624-f24a-4e8c-982c-0cfe95d444f3",
+			"id": "411f2108-b765-4b50-8321-188fec31ed98",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "044f046a-8794-4b43-ac33-eff750ed4b2c",
+			"id": "3c25573f-db65-43cf-a8ba-93cfacbe6167",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f13ca248-7316-4c1c-a4a5-8e99c3de3d92",
+			"id": "6770e05b-55fd-4d37-b156-7c93846322ca",
 			"key": "body",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "0b14a45b-7a1e-45b1-b9b5-5610892d5938",
+			"id": "720e0187-9b06-4d34-a033-609e267bdfcd",
 			"key": "param",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f5b1d983-a319-45a4-bd38-4c6d312ee40c",
+			"id": "63f84e2c-7796-4a94-8ffc-0082d57555ad",
 			"key": "par",
 			"value": ""
 		}
