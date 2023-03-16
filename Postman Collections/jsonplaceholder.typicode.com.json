@@ -82,6 +82,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "d2439d25-cff8-4975-b47d-a0056b8aba80",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -108,7 +120,7 @@
 	],
 	"variable": [
 		{
-			"id": "4e9dbb56-53dc-4197-8b06-1b620115d6b4",
+			"id": "09f46b24-bd0a-4ac3-9677-651351e3f90c",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
