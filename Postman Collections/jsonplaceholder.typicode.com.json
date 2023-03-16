@@ -162,8 +162,24 @@
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "JSON.stringify({\r\n    title: 'foo',\r\n    body: 'bar',\r\n    userId: 1,\r\n  })"
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "foo",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "bar",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "123",
+							"type": "text"
+						}
+					]
 				},
 				"url": {
 					"raw": "{{url}}/posts",
@@ -209,31 +225,31 @@
 	],
 	"variable": [
 		{
-			"id": "d490dbcf-939b-4787-9c18-4938881a12c6",
+			"id": "ec80786b-705e-40fb-b15b-6059e41348db",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "635b8b39-c5c3-4f2f-ac69-061df8d0c5c0",
+			"id": "fbc06418-1e8d-45be-bef6-953be8212809",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "02ba410e-a225-4a55-a5bf-387687b68c1b",
+			"id": "75df1491-3505-44ea-bc3f-17cb6c561783",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2a15cfde-52d0-4e35-b8f8-9d344aae2a61",
+			"id": "109574e6-d869-4b4e-9bdd-4c65ddae2c6f",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "937e2c29-1997-4335-b8ce-229e51e1cc91",
+			"id": "93e2d2fd-918e-4aa6-9924-741bfdb36f93",
 			"key": "body",
 			"value": "",
 			"type": "string",
