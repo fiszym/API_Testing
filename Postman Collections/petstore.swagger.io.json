@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "587d7fde-3703-48a6-800f-cfc4d924771c",
-		"name": "Petstore API",
+		"name": "Petstore API petstore.swagger.io/v2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -697,44 +697,44 @@
 	],
 	"variable": [
 		{
-			"id": "abc3fb12-d7e9-4e53-b5af-9d63ec6e4c91",
+			"id": "aad38b2b-27b2-4a65-a054-80b3ded9afe9",
 			"key": "pet_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cdb37b17-b0f3-41a6-ae61-655a42c2561c",
+			"id": "20aa8cbf-80cc-4239-966b-058103d867fd",
 			"key": "url",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "61a9d1b3-d872-4530-963c-fdc6707ead9f",
+			"id": "4e6b8090-a583-4fe7-974c-56b8194961ca",
 			"key": "id2",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "6c68452c-73a7-4d31-b07a-50cc80923631",
+			"id": "ab6f901f-28b5-4659-b90f-77867900ba70",
 			"key": "pet_name",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b06f67b-8f8f-4490-9872-e0d3684bea16",
+			"id": "d1be4673-043d-4a63-8fec-aa78488e6128",
 			"key": "pet_status",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "28cc4856-a5a8-4439-b5c8-0297130d5966",
+			"id": "be3453f7-b2ae-468b-8426-0a6e572e473f",
 			"key": "order_id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7a34092a-8a53-4908-a342-a2c3d67af208",
+			"id": "5f3a0cb5-af23-4b8c-80dd-a42522c66686",
 			"key": "user_name",
 			"value": "",
 			"type": "string"
