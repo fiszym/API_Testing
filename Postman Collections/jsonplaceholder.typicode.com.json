@@ -15,12 +15,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/todos/?title=ipsam aperiam voluptates qui",
-					"protocol": "https",
+					"raw": "{{url}}/todos/?title=ipsam aperiam voluptates qui",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
+						"{{url}}"
 					],
 					"path": [
 						"todos",
@@ -212,31 +209,31 @@
 	],
 	"variable": [
 		{
-			"id": "8ee32bf6-64e6-4c40-af80-a58404c3a534",
+			"id": "43a76f0d-c432-44b9-a657-2897260c899c",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "b5b87076-b294-4f53-88f6-07990de7b49b",
+			"id": "d55a4e95-3936-441a-99ac-b251b529bf14",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2859e461-6076-4365-8cec-167f148e7175",
+			"id": "82d65ff5-9e93-49e1-a7b4-bc0d5e26c0f3",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "99186fc4-11b7-426a-9951-697e90aae7ba",
+			"id": "25f6a3ba-8b0c-4ea3-b40f-bea3dc8a9ca3",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6548c037-b7ec-433e-b9de-ddec1f2a55fa",
+			"id": "4c0440f9-1e01-4936-a104-e9ea04d1ceee",
 			"key": "body",
 			"value": "",
 			"type": "string",
