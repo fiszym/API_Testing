@@ -142,7 +142,10 @@
 							"\r",
 							"\r",
 							"var jsonData = pm.response.json ();\r",
-							"pm.collectionVariables.set(\"id\", jsonData.id);"
+							"pm.collectionVariables.set(\"id\", jsonData.id);\r",
+							"\r",
+							"var jsonData = pm.response.json ();\r",
+							"pm.collectionVariables.set(\"userId\", jsonData.userId);"
 						],
 						"type": "text/javascript"
 					}
@@ -162,24 +165,13 @@
 					}
 				],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "title",
-							"value": "foo",
-							"type": "text"
-						},
-						{
-							"key": "body",
-							"value": "bar",
-							"type": "text"
-						},
-						{
-							"key": "userId",
-							"value": "123",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"foo\",\r\n    \"body\": \"bar\",\r\n    \"userId\": \"1\"\r\n    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "{{url}}/posts",
@@ -321,31 +313,31 @@
 	],
 	"variable": [
 		{
-			"id": "12e6c234-6fc1-444a-b7b8-3b35f6bd330c",
+			"id": "0f755959-544a-4ef9-b7eb-15a0635b0de4",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "2fc52037-a4f0-4908-9edc-fcfc88eb39b9",
+			"id": "b3482c36-1655-4c16-ba03-5247f488e24f",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8eebca55-284e-4e61-8d43-e4c97dc94292",
+			"id": "5d0c9eaa-4065-49f1-a298-0a4f501678a2",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "00083bb7-9e4a-4ac7-82cc-9b3ddab154db",
+			"id": "b1fbb86c-e230-4c9f-aca0-73786a01c2fe",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a82f8e33-e235-4606-a86c-3d97b2af249a",
+			"id": "c8ab4e5f-2dad-45a6-80fb-7e3e057de727",
 			"key": "body",
 			"value": "",
 			"type": "string",
