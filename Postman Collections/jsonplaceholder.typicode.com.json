@@ -319,41 +319,46 @@
 	],
 	"variable": [
 		{
-			"id": "bc68fad2-128f-4344-9ba9-aa0ac04a1ef2",
+			"id": "decc3b00-2fd6-4232-8a47-f10d1acf108f",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "1ad77cfa-c355-4dd6-bf44-5177c0d85447",
+			"id": "b589b312-7b04-4f3f-816d-3d1537b2e34f",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a5823d2b-43f9-4448-bff3-bfb0e1209f92",
+			"id": "fc09c954-902f-44fa-8d1d-0cf066206ad5",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0f181f02-d031-4c38-a86f-97e32d886e1a",
+			"id": "1b2d730d-1cfa-4ca8-8b8a-3a7ad7a8bc30",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5c131f47-df27-49a4-bfdf-c48a521b5c82",
+			"id": "ee6fbcca-849f-4c10-a724-3acec08e1eff",
 			"key": "body",
 			"value": "",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "52feacf6-39fe-4e9a-abf8-71d8d3d5dca3",
+			"id": "762429b4-efa9-44e1-a82b-191c6f51a640",
 			"key": "param",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"id": "19905836-296a-4cb7-87da-03d5035ddc67",
+			"key": "par",
+			"value": ""
 		}
 	]
 }
