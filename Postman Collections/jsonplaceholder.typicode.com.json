@@ -171,6 +171,48 @@
 			"response": []
 		},
 		{
+			"name": "GET nested photos",
+			"id": "07827050-1e7b-49d1-92f0-9c0cd0a929c7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/posts/{{userId}}/comments",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						"{{userId}}",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "userId",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "POST smth",
 			"event": [
 				{
@@ -279,31 +321,31 @@
 	],
 	"variable": [
 		{
-			"id": "62a3689d-6719-4d73-81be-627db247ff85",
+			"id": "7213fd7f-a20c-46ab-a754-f173b8957f10",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "d59925ef-6a67-4533-88e7-27a0d0280ae3",
+			"id": "e3ced8a8-c866-493e-b7c2-9008c8a16e15",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a975d81e-52da-4641-bef0-a86469efb0ba",
+			"id": "bc128cc9-6c24-47fe-8e13-59df51c4b13f",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c671fea0-7dbf-478f-a12c-827e8da0d97f",
+			"id": "98f887ab-8e41-4945-b662-256933ad2383",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aee164e8-459c-43da-be93-6b9b555667b3",
+			"id": "ff0ae874-45fc-4a50-aa83-8a53d83f0864",
 			"key": "body",
 			"value": "",
 			"type": "string",
