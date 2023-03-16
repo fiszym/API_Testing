@@ -129,7 +129,7 @@
 			"response": []
 		},
 		{
-			"name": "GET nested posts",
+			"name": "GET nested comments",
 			"id": "9ceec15b-ca69-4c8d-bea9-af8b6eee434d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -321,31 +321,31 @@
 	],
 	"variable": [
 		{
-			"id": "7213fd7f-a20c-46ab-a754-f173b8957f10",
+			"id": "5f514af6-e837-49b3-a484-1b477117e8aa",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "e3ced8a8-c866-493e-b7c2-9008c8a16e15",
+			"id": "d0e2c4f0-2849-41b6-9921-c08c345767ce",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bc128cc9-6c24-47fe-8e13-59df51c4b13f",
+			"id": "f191a008-3e03-4699-a0fa-c001455ecd84",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98f887ab-8e41-4945-b662-256933ad2383",
+			"id": "46292047-70ce-4976-afee-a31b04088882",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ff0ae874-45fc-4a50-aa83-8a53d83f0864",
+			"id": "33a60b28-ec82-4eb2-a094-0b86da8e5af2",
 			"key": "body",
 			"value": "",
 			"type": "string",
