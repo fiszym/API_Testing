@@ -163,7 +163,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "SON.stringify({\r\n    title: 'foo',\r\n    body: 'bar',\r\n    userId: 1,\r\n  })"
+					"raw": "JSON.stringify({\r\n    title: 'foo',\r\n    body: 'bar',\r\n    userId: 1,\r\n  })"
 				},
 				"url": {
 					"raw": "{{url}}/posts",
@@ -209,31 +209,31 @@
 	],
 	"variable": [
 		{
-			"id": "c54075c9-6da0-4b94-92b9-b8b38fb13805",
+			"id": "b74a2032-bc77-4a47-aa24-3a832befbe5c",
 			"key": "url",
 			"value": "https://jsonplaceholder.typicode.com",
 			"type": "string"
 		},
 		{
-			"id": "6e6f4cb8-f12c-4e5c-8580-3b648bd7a1e2",
+			"id": "e8887f48-2849-453a-a444-f7f047270fee",
 			"key": "id",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "23b1c7fb-a008-41ba-baa2-e775e4774a11",
+			"id": "d0f31514-9f66-48f7-b1f3-77593b8283d4",
 			"key": "userId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "11851912-0530-46fe-b500-dda723ad8e18",
+			"id": "38f78653-0c18-4799-bbe0-3e835656b3f5",
 			"key": "title",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17460e07-58ba-457b-be24-0f199522a961",
+			"id": "dac158b5-d7b1-4526-be71-78ee6ad9cd60",
 			"key": "body",
 			"value": "",
 			"type": "string",
